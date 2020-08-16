@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import InputSalary from './components/inputs/InputSalary';
 import InputDisplay from './components/inputs/InputDisplay';
+import PercentBar from './components/percentbar/PercentBar';
 import { calculateSalaryFrom } from './helpers/salary';
 import { formatBRL } from './helpers/currencyFormatter';
-import PercentBar from './components/percentbar/PercentBar';
 import css from './components/inputs/input.module.css';
 
 export default class App extends Component {
@@ -13,14 +13,12 @@ export default class App extends Component {
     this.state = {
       fullSalary: 3900,
     }
-
   }
 
   handleSalaryChange = (newSalary) => {
     this.setState({
       fullSalary: newSalary,
     });
-
   }
 
   render() {
