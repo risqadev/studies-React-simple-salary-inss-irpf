@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class InputSalary extends Component {
   handleInputChange = (event) => {
@@ -8,7 +8,7 @@ export default class InputSalary extends Component {
   }
 
   render() {
-    const { type, label, value } = this.props;
+    const { type, label, value, step } = this.props;
 
     return (
       <div>
@@ -17,6 +17,7 @@ export default class InputSalary extends Component {
           <input
             type={type}
             value={value}
+            step={step}
             onChange={this.handleInputChange}
           />
         </label>

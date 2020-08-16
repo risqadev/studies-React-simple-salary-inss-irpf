@@ -1,0 +1,29 @@
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.inputBase {
+  font-weight: 700;
+  color: black;
+  min-width: 150px;
+}
+
+.inputDiscountINSS {
+  font-weight: 700;
+  color: #e67e22;
+  min-width: 150px;
+}
+
+.inputDiscountIRPF {
+  font-weight: 700;
+  color: #c0392b;
+  min-width: 150px;
+}
+
+.inputNetSalary {
+  font-weight: 700;
+  color: #16a085;
+  min-width: 150px;
+}
